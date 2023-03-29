@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   FragTrap.hpp                                       :+:    :+:            */
+/*   ScavTrap.hpp                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/03/29 14:09:06 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/03/29 15:28:31 by mforstho      ########   odam.nl         */
+/*   Created: 2023/03/28 16:58:16 by mforstho      #+#    #+#                 */
+/*   Updated: 2023/03/29 15:29:20 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-#ifndef FRAGTRAP_HPP
-# define FRAGTRAP_HPP
+#ifndef SCAVTRAP__hpP
+# define SCAVTRAP__hpP
 
-#include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap {
+class ScavTrap : public ClapTrap {
 	private:
-
+		bool	_guardmode;
 	public:
-		FragTrap(void);
-		FragTrap(std::string name);
-		FragTrap(FragTrap const & src);
-		~FragTrap(void);
-		FragTrap & operator=(FragTrap const & src);
-		void highFivesGuys(void);
+		ScavTrap(void);
+		ScavTrap(std::string name);
+		ScavTrap(ScavTrap const & src);
+		~ScavTrap(void);
+		ScavTrap & operator=(ScavTrap const & src);
+		void attack(const std::string& target);
+		void guardGate(void);
 };
 
 #endif
