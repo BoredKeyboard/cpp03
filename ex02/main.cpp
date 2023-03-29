@@ -6,24 +6,21 @@
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/28 13:31:08 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/03/29 15:24:34 by mforstho      ########   odam.nl         */
+/*   Updated: 2023/03/29 15:26:00 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int	main(void) {
 	{
-		ScavTrap	maya("Maya");
+		FragTrap	maya("Maya");
 
+		maya.highFivesGuys();
 		maya.attack("Jack");
-		maya.guardGate();
 		maya.takeDamage(5);
 		maya.beRepaired(1);
 		maya.takeDamage(2);
-		maya.guardGate();
-		maya.guardGate();
-		maya.guardGate();
 		maya.attack("Jack");
 		for (int i = 0; i < 4; i++) {
 			maya.attack("Jack");
@@ -32,13 +29,12 @@ int	main(void) {
 	}
 	std::cout << std::endl;
 	{
-		ScavTrap	maya("Maya");
+		FragTrap	maya("Maya");
 
 		maya.attack("Jack");
-		maya.guardGate();
 		maya.takeDamage(5);
 		maya.beRepaired(1);
-		maya.guardGate();
+		maya.highFivesGuys();
 		maya.takeDamage(6);
 		maya.attack("Jack");
 	}
