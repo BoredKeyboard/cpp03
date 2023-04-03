@@ -6,7 +6,7 @@
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/29 14:09:06 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/03/29 15:29:14 by mforstho      ########   odam.nl         */
+/*   Updated: 2023/04/03 15:03:15 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 #include "ScavTrap.hpp"
 
-class FragTrap : public ClapTrap {
+class FragTrap : public virtual ClapTrap {
 	private:
 
 	public:

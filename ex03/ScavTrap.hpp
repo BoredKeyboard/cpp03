@@ -6,7 +6,7 @@
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/28 16:58:16 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/03/29 15:29:20 by mforstho      ########   odam.nl         */
+/*   Updated: 2023/04/03 15:03:22 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap {
+class ScavTrap : public virtual ClapTrap {
 	private:
 		bool	_guardmode;
 	public:
