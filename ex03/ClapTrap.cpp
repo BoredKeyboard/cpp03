@@ -6,7 +6,7 @@
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/28 13:31:02 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/03/29 13:52:09 by mforstho      ########   odam.nl         */
+/*   Updated: 2023/04/04 15:54:43 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,10 @@ ClapTrap::~ClapTrap(void) {
 ClapTrap & ClapTrap::operator=(ClapTrap const & src) {
 	if (this == &src)
 		return (*this);
+	this->_name = src._name;
+	this->_hp = src._hp;
+	this->_energy = src._energy;
+	this->_ad = src._ad;
 	return (*this);
 }
 
