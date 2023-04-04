@@ -6,7 +6,7 @@
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/29 15:27:58 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/04/03 16:17:27 by mforstho      ########   odam.nl         */
+/*   Updated: 2023/04/04 15:17:23 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 class DiamondTrap : public ScavTrap, public FragTrap {
 	private:
 		std::string	_name;
-		ClapTrap::_name;
 	public:
 		DiamondTrap(void);
 		DiamondTrap(std::string name);

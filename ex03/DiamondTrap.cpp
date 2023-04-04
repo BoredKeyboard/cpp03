@@ -6,18 +6,19 @@
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/29 15:29:38 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/04/03 16:32:00 by mforstho      ########   odam.nl         */
+/*   Updated: 2023/04/04 15:17:29 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap(void) : FragTrap(), ScavTrap() {
+DiamondTrap::DiamondTrap(void) : ScavTrap(), FragTrap() {
 	std::cout << "Default DiamondTrap constructor called" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name) {
+DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name") {
 	std::cout << "DiamondTrap name constructor called" << std::endl;
+	this->_name = name;
 }
 
 DiamondTrap::DiamondTrap(DiamondTrap const & src) : ClapTrap(src) {
